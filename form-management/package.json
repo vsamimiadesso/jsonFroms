@@ -1,0 +1,19 @@
+{
+  "name": "@insure-iwp/form-management",
+  "version": "0.0.1",
+  "author": "adesso insurance solutions GmbH",
+  "description": "in|sure Angular Product Library",
+  "scripts": {
+    "build": "ng build @insure-iwp/form-management",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@insure-iwp/shared": "^1.0.0"
+  },
+  "exports": {
+    ".": {
+      "sass": "./styles/index.scss"
+    }
+  },
+  "sideEffects": false
+}

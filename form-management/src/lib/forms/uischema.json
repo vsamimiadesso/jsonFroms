@@ -1,0 +1,20 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "Control",
+      "label": "Eats vegetables?",
+      "scope": "#/properties/vegetables"
+    },
+    {
+      "type": "Control",
+      "label": "Eats ?",
+      "scope": "#/properties/test"
+    },
+    {
+      "type": "Control",
+      "label": "Kind of vegetables",
+      "scope": "#/properties/kindOfDead"
+    }
+  ]
+}

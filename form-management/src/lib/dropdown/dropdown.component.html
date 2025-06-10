@@ -1,0 +1,11 @@
+<div [hidden]="hidden">
+  <insure-select-menu
+    [label]="label"
+    [formControl]="form"
+    [items]="enumOptions()"
+    (changeEvent)="onChanges($event)"
+    [clearable]="false"
+    [autocomplete]="true"
+    [readonly]="isRequired"
+  ></insure-select-menu>
+</div>

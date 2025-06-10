@@ -1,0 +1,9 @@
+<div [hidden]="hidden">
+  <insure-input
+    [formControl]="form"
+    [type]="'text'"
+    [label]="label"
+    [config]="{ rendered: true, required: isRequired }"
+  ></insure-input>
+</div>
+{{ isRequired }}

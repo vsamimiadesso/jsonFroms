@@ -1,0 +1,21 @@
+@if (data && schema && uischema) {
+  <insure-fieldset>
+    <jsonforms
+      [data]="data"
+      [schema]="schema"
+      [uischema]="uischema"
+      [renderers]="customRenderers"
+      (dataChange)="onDataChange($event)"
+      [config]="{
+        restrict: false,
+        trim: false,
+        showUnfocusedDescription: false,
+        hideRequiredAsterisk: true,
+      }"
+      [validationMode]="'ValidateAndShow'"
+      (errors)="onError($event)"
+    ></jsonforms>
+  </insure-fieldset>
+}
+
+<button (click)="onSubmit()">Submit</button>

@@ -1,0 +1,26 @@
+{
+  "properties": {
+    "vegetables": {
+      "type": "boolean"
+    },
+    "test": {
+      "type": "string",
+      "format": "input"
+    },
+    "kindOfDead": {
+      "type": "string",
+      "format": "dropdown",
+      "enum": ["carrot", "broccoli", "spinach"]
+    }
+  },
+  "if": {
+    "properties": {
+      "vegetables": {
+        "enum": [true]
+      }
+    }
+  },
+  "then": {
+    "required": ["test"]
+  }
+}
